@@ -63,9 +63,8 @@ int main()
 		A.push_back(rand()%100);	
 	for(std::vector<int>::iterator it = A.begin(); it != A.end(); ++it)
 		std::cout << *it << " ";
-	std::cout << std::endl;
+	std::cout << std::endl;	
 	
-	build_max_heap(A);
 	heap_sort(A);
 	
 	for(std::vector<int>::iterator it = A.begin(); it != A.end(); ++it)
