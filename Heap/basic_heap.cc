@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<cstdlib>
 
 template<typename T>
 void max_heapify(std::vector<T>& A, int const& index, int const& heapsize)
@@ -33,17 +34,9 @@ void build_max_heap(std::vector<T>& A)
 int main()
 {
 	std::vector<int> A;
-	A.push_back(4);
-	A.push_back(1);
-	A.push_back(3);
-	A.push_back(2);
-	A.push_back(16);
-	A.push_back(9);
-	A.push_back(10);
-	A.push_back(14);
-	A.push_back(8);
-	A.push_back(7);
 	
+	for(int i = 0; i < 10; i++)
+		A.push_back(rand()%100);	
 	for(std::vector<int>::iterator it = A.begin(); it != A.end(); ++it)
 		std::cout << *it << " ";
 	std::cout << std::endl;
