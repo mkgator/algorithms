@@ -1,4 +1,4 @@
-algo-rhythms
+algorithms
 ============
 
 Implementation of random algorithms
